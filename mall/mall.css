@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+
+*{margin: 0; padding: 0;}
+
+li{list-style: none;}
+
+a{text-decoration: none; color: inherit;}
+
+img{
+    display: block;
+}
+.text{
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid black;
+    margin: 0 auto;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 0px;
+}
+
+/* 메뉴 큰 박스 */
+.nav{
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid pink;
+    text-align: center;
+    width:900px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* 메뉴 리스트 박스 */
+.nav li{
+    float:left;
+    width:130px;
+    border:1px solid blue;
+    text-align: center;
+    margin-left:40px;
+    
+}
+
+/* 메뉴 이미지 */
+.nav>li img{
+    border:1px solid crimson;
+    margin: 0 auto;
+}
+
+
+/* 메인박스 */
+.mainbox{
+    width: 1600px;
+    height: 633px;
+    border:1px solid black;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.mainbox> img{
+    float:left;
+}
+
+.right{
+    width:316px;
+    height: 633px;
+    float:right;
+    overflow: hidden;
+    border:1px solid darkcyan;
+}
+
+.box{
+    width:316px;
+    height: 160px;
+    text-align: center;
+    border:4px solid blueviolet;
+    margin-top:10px;
+    box-sizing: border-box;
+}
+
+.box span:first-child{
+    background-color:purple ;
+    color:white;
+    display:block;
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.box span:last-child{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* probox01 */
+
+.probox_01{
+    width:1600px;
+    height: 1060px;
+    border:1px solid black;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.probox_01>.left{
+    float:left;
+    width: 784px;
+    height: 1060px;
+    
+}
+
+.probox_01>.right_{
+    float:right;
+}
+
+.youtube01{
+    margin-top:10px;
+}
+
+
+/* probox02 */
+
+.probox_02{
+    width: 1600px;
+    border:1px solid black;
+    margin: 10px auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+
+.probox_03{
+    width:1600px;
+    height: 726px;
+    border:1px solid salmon;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.probox_03>img{
+    float: left;
+}
+
+.youtube02{
+    float:right;
+}
+
+.address{
+    width: 805px;
+    height: 205px;
+    border: 1px solid darkgoldenrod;
+    overflow: hidden;
+    text-align: center;
+    margin-top:10px;
+}
+
+.email{
+    width: 700px;
+    height: 35px;
+    border: 1px solid forestgreen;
+    margin: 85px auto;
+    overflow: hidden;
+}
+
+.probox_03 label{
+    width:100px;
+    float:left;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid hotpink;
+    
+}
+
+input[type=url]{
+    width:400px;
+    height: 35px;
+    display: block;
+    float: left;
+    background-color: darkgreen;
+    box-sizing: border-box;
+    padding-left:20px;
+    margin-left:10px;
+}
+
+input[type=url]:focus{
+    outline: none;
+    background-color: darkkhaki;
+}
+
+input[type=submit]{
+    width: 100px;
+    height: 35px;
+    display: block;
+    border: none;
+    float: left;
+    cursor: pointer;
+    margin-left:10px;
+}
