@@ -1,0 +1,387 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+
+
+a{text-decoration: none; color:inherit;}
+img{display: block;}
+
+/* 전체 감싸는 영역 */
+.container{
+  width: 1200px;
+  height: 1000px;
+  margin: 50px auto;
+  /* border:1px solid black; */
+  position: relative;
+}
+
+/* 로고 */
+.top{
+  width: 1200px;
+  height: 80px;
+  /* border:1px solid blue; */
+  display: flex;
+  overflow: hidden;
+ 
+  
+}
+
+/* 국토교통부 */
+h2{
+  line-height: 80px;
+  color:#555659;
+
+}
+
+/* 유지보수공사실적 */
+h1{
+  line-height: 80px;
+  color:#2893dd;
+  margin:0 15px;
+  
+}
+
+/* 신고시스템 */
+h1 span{
+  color:#090d40;
+  
+}
+
+/* CWS 버튼 전체 */
+.top>.cws{
+  width:130px;
+  height:40px;
+  border:1px solid #dfdfdf;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
+  margin-left:auto;
+  margin-top:15px;
+  
+  
+
+}
+
+/* CWS버튼 글자 */
+.cws span{
+  color:#1d97e1;
+  font-weight: 900;
+}
+
+/* 로그인창 */
+.left{
+  width:288px;
+  height: 608px;
+  border:1px solid black;
+  float:left;
+  overflow:hidden;
+  box-sizing: border-box;
+  background-color:#101345;
+}
+
+/* 아이디,비밀번호,로그인,사용자등록, 인증서 등록을 감싸는 박스 */
+.login{
+  width: 210px;
+  height: 245px;
+  /* background-color: pink; */
+  margin: 0 auto;
+  margin-top:40px;
+  box-sizing: border-box;
+}
+
+/* 아이디창 */
+input[type=id]{
+  width: 202px;
+  height: 40px;
+  /* border:1px solid purple; */
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+/* 비밀번호 창 */
+input[type=password]{
+  width: 202px;
+  height: 40px;
+  /* border:1px solid purple; */
+  font-size: 15px;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+/* 로그인창 */
+input[type=submit] {
+  width: 210px;
+  height: 40px;
+  background-color: #2390dc;
+  color:#fff;
+  border:none;
+  margin:10px auto;
+  font-weight: 800px;
+  font-size: 17px;
+}
+
+/* 사용자등록,인증서 등록 박스 */
+.login_user{
+  width: 100px;
+  height: 90px;
+  background-color: #1a5291;
+  float:left;
+  color:white;
+  text-align: center;
+}
+
+/* 사용자 등록과 인증서 등록 사이의 공백 */
+.login_user:nth-of-type(2){
+  margin-left:10px;
+}
+
+/* 사용자등록,인증서 등록 아이콘 */
+.login_user i{
+  font-size: 30px;
+  margin:10px auto;
+  /* border:1px solid black; */
+  width:100%;
+  text-align: center;
+}
+
+/* 아이디 비밀번호 찾기 */
+.login_find{
+  width:210px;
+  /* border:1px solid red; */
+  margin:35px;
+  color:white;
+  text-align: center;
+}
+
+/* 사용자 매뉴얼 다운로드 */
+.login_menual{
+  width:210px;
+  height: 50px;
+  color:white;
+  font-weight: 900;
+  margin:0 auto;
+  text-align: center;
+  line-height: 50px;
+  background: linear-gradient(30deg,pink,blue,aqua);
+}
+
+
+/* 실적신고 문의처+ 시스템 이용안내*/
+.login_call{
+  width: 198px;
+  height: 50px;
+  background-color: white;
+  line-height: 50px;
+  font-size: 15px;
+  margin-left:41px;
+  padding-left: 10px;
+}
+
+/* 실전신고 문의처 아래 선 */
+.login_call:first-child{
+  border-bottom: 1px solid #b3b4b4;
+}
+
+/* 실적신고 문의처 + 시스템 이용안내 전체박스 위쪽 공간 */
+.login_callbox:last-child{
+  margin-top:20px;
+}
+
+/* 시스템 이용안내 1811.8778 */
+.login_call span{
+  font-weight: 900;
+  color:#0e93e5;
+  font-size: 18px;
+  padding-left:10px
+}
+
+/* 실적신고 문의처 아이콘 */
+.login_call i{
+  padding-right:20px;
+}
+
+/* 메인 오른쪽 영역 */
+.right{
+  width: 912px;
+  height: 608px;
+  /* background-color: beige; */
+  float:right;
+  position: relative;
+}
+
+/* 메인 오른쪽 영역 공간 */
+.right>.main{
+  width:890px;
+  height: 300px;
+  background-color: pink;
+  float: right;
+}
+
+/* 오른쪽 메인 이미지 */
+.right .main img{
+  width: 100%;
+}
+
+/* 공지사항 부분 박스 */
+.right>.notice{
+  width: 890px;
+  height: 250px;
+  /* background-color: #0e93e5; */
+  right:0%;
+  bottom: 0%;;
+  position: absolute;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+/* 공지사항 박스 3개 */
+.notice>.notice_box{
+  width:280px;
+  height:250px;
+  background-color: white;
+  border:1px solid #909090;
+}
+
+
+/* 공지사항 Q&A FAQ 헤드 */
+.notice_box>.notice_header{
+  width:280px;
+  height: 50px;
+  background-color: #ecf4f7;
+  /* border:1px solid black; */
+  display: flex;
+  justify-content: space-around;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*공지사항 Q&A FAQ ">" 아이콘  */
+.notice_box>.notice_header i{
+  line-height: 50px;
+}
+
+
+/* 공지사항 Q&A 내용 */
+.notice_content{
+  width: 220px;
+  height: 220px;
+  color:#909090;
+  margin:10px auto;
+  box-sizing: border-box;
+}
+
+/*  FAQ  */
+.notice_content_Q{
+  width: 220px;
+  height: 220px;
+  color:#909090;
+  margin-top:10px;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+/* 공지사항 리스트 공백 내용 */
+.notice_content li{
+  padding-top:10px;
+}
+
+/* 3번째 FAQ 내용 */
+.notice_content_Q li{
+  list-style: none;
+  padding-top:10px;
+}
+
+/* li style 을 'Q."로 바꾸기 */
+.notice_content_Q li::before{
+  content: 'Q.';
+  color:black;
+  list-style: none;
+}
+
+/* 배너 바깥 공간 */
+footer{
+  width:1200px;
+  height:312px;
+  /* background-color: darkgray; */
+  position: absolute;
+  bottom: 0%;
+}
+
+/* 회사 4개의 배너 박스 나열하기 */
+.banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/* 회사 4개 박스 */
+.company{
+  width: 288px;
+  height: 75px;
+  border: 1px solid #b3b4b4;
+  margin-top:30px;
+}
+
+/* 회사4개 로고 이미지 */
+.company img{
+  margin: 20px auto;
+}
+
+/* footer 국토교통부/주소 전체 박스*/
+.menubar{
+  background-color: #f0f1f1;
+  width: 1200px;
+  height: 150px;
+  position: absolute;
+  bottom: 0%;
+}
+
+/* 국토교통부/주소 */
+.menu{
+  margin:20px 80px;
+}
+
+/* 푸터 국토 교통부/주소 옆으로 바꾸기 */
+.menu li{
+  display:inline;
+  float:left;
+  width:180px;
+  height: 80px;
+  position:relative;
+  /* border:1px solid black; */
+  box-sizing: border-box;
+  font-size: 13px;
+  padding:30px;
+  line-height: 20px;
+  color:#a2a3a3;
+}
+
+/* 국토 교통부 주소 */
+.menu li:last-child{
+  width:500px;
+  height: 80px;
+}
+
+/* 국토교통부 이미지 */
+.menu li img{
+  width:100%;
+}
+
+/* 푸터 "|" */
+.menu li::after{
+  width:1px;
+  height: 30px;
+  content: "";
+  top:30px;
+  left: 10px;
+  position: absolute;
+  background-color: #b3b4b4;
+}
+
+/* 푸터 앞에 "|" 없애기 */
+.menu li:first-child::after{
+  display: none;
+}

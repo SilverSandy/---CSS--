@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최정은</title>
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 전체 감싸기 -->
+<div class="container">
+  <!-- 로고 + 제목 -->
+    <div class="top">
+      <img src="./img/logo.png" alt="img">
+      <h2>국토교통부</h2>
+      <h1>유지보수공사실적<span>신고시스템</span></h1>
+      <!-- CWS 버튼 -->
+      <div class="cws"><a href="https://cws.kiscon.net/main.aspx"><span>CWS</span>바로가기</a></div>
+    </div>
+  
+    <!-- left:로그인창 -->
+    <div class="left">
+      <!-- 아이디,비밀번호,로그인,사용자등록, 인증서 등록을 감싸는 박스 -->
+      <div class="login">
+        <input type="id" id="id" placeholder="아이디 입력">
+        <input type="password" id="password" placeholder="비밀번호 입력">
+        <input type="submit" id="submit" value="로그인">
+        <div class="login_user"><i class="fa-solid fa-user"></i>사용자 등록</div>
+        <div class="login_user"><i class="fa-solid fa-lock"></i>인증서 등록</div>
+      </div>
+      <!-- 아이디 비밀번호 찾기 -->
+      <div class="login_find"><i class="fa-solid fa-magnifying-glass"></i>아이디찾기/비밀번호찾기</div>
+      <div class="login_menual"><i class="fa-solid fa-box-open"></i>사용자 매뉴얼 다운로드</div>
+      <!-- 사용자 매뉴얼 다운로드 -->
+      <div class="login_callbox">
+        <div class="login_call"><i class="fa-solid fa-phone"></i>실적신고 문의처</div>
+        <div class="login_call">시스템이용안내<span>1811.8778</span></div>
+      </div>   
+    </div>  
+
+    <!-- 메인 오른쪽  공지사항 Q&A FAQ-->
+    <div class="right">
+      <div class="main">
+        <img src="./img/main.png" alt="img"></div>
+      <div class="notice">
+        <div class="notice_box">
+          <div class="notice_header">공지사항<a href="https://mws.kiscon.net/notice/notice.aspx">
+            <i class="fa-solid fa-chevron-right"></i></a></div>
+          <!-- 공지사항 박스 -->
+            <div class="notice_content">
+            <ul>
+              <li><a href="https://mws.kiscon.net/notice/notice_view.aspx?no=14">유지보수공사 실적 결과 안내</a></li>
+              <li><a href="https://mws.kiscon.net/notice/notice_view.aspx?no=13">(전체공지) 유지보수공사실적...</a></li>
+              <li><a href="https://mws.kiscon.net/notice/notice_view.aspx?no=12">협회이관 등 실적 처리 안내</a></li>
+              <li><a href="https://mws.kiscon.net/notice/notice_view.aspx?no=11">유지보수공사실적 확정 일정...</a></li>
+              <li><a href="https://mws.kiscon.net/notice/notice_view.aspx?no=10">건설공사기성실적증명서 양식</a></li>
+           </ul>
+          </div>
+        </div>
+        <!-- Q&A박스 -->
+        <div class="notice_box">
+          <div class="notice_header">Q&A
+            <i class="fa-solid fa-chevron-right"></i></div>
+          <div class="notice_content">
+          </div>
+        </div>
+
+        <!-- FAQ박스 -->
+        <div class="notice_box">
+          <div class="notice_header">FAQ
+            <i class="fa-solid fa-chevron-right"></i></div>
+          <div class="notice_content_Q">
+            <ul>
+              <li><a href="https://mws.kiscon.net/notice/faq.aspx">2022년 이후 공사부터 ...</a></li>
+              <li><a href="https://mws.kiscon.net/notice/faq.aspx">국토교통부 유지보수공사실적...</a></li>
+              <li><a href="https://mws.kiscon.net/notice/faq.aspx">유지보수공사의 정의 및 범...</a></li>
+              <li><a href="https://mws.kiscon.net/notice/faq.aspx">유지보수공사실적 신고서는 ...</a></li>
+              <li><a href="https://mws.kiscon.net/notice/faq.aspx">신설공사과 유지보수공사를 ...</a></li>
+           </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!--푸터:배너 4,회사정보 -->
+    <footer>
+      <div class="bottom">
+        <!-- 회사4개 배너만들기 -->
+        <div class="banner">
+          <div class="company"><a href="https://siljuk.cak.or.kr/"><img src="./img/cak_lnk01.png" alt="img"></a></div>
+          <div class="company"><a href="https://esingo.kosca.or.kr/"><img src="./img/kosca.png" alt="img"></a></div>
+          <div class="company"><a href="https://siljuk.kmcca.or.kr/main.do;jsessionid=25A76507157FF70E56FF1AB23BBBC9C8"><img src="./img/m_lnk03.png" alt="img"></a></div>
+          <div class="company"><a href="https://fma.or.kr/new_daehan/index.asp"><img src="./img/m_lnk04.png" alt="img"></a></div>
+        </div>  
+        <nav class="menubar">
+          <ul class="menu">
+            <li><a href="http://molit.go.kr/"><img src="./img/ft_ci.png" alt="img"></a></li>
+            <li><a href="#"><strong>[증빙서류 접수처](06021)<br> 서울특별시 강남구 도산대로 307, 7층 건설산업정보원 (신사동, 백영빌딩)</strong></a></li>
+          </ul>
+        </footer>
+  </div>
+</div>
+
+
+<script src="https://kit.fontawesome.com/6ba5983699.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
